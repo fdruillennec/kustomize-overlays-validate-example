@@ -1,0 +1,1 @@
+# kustomize-overlays-validate-example
