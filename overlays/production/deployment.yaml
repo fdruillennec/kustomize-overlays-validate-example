@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: demo-app
+          image: gcr.io/distroless/base
+          env:
+            - name: ENV_NAME
+              value: production
